@@ -2,10 +2,8 @@
 <html>
 
 <head>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>For Divya ❤️</title>
+<title>I'm Sorry Divya ❤️</title>
 
 <style>
 
@@ -30,7 +28,7 @@ box-shadow:0 15px 40px rgba(0,0,0,0.25);
 
 h1{
 color:#ff4b7d;
-font-size:32px;
+font-size:30px;
 }
 
 .cat{
@@ -83,18 +81,14 @@ animation:float 5s linear infinite;
 
 <div class="container">
 
-<div class="cat">🐱</div>
+<div class="cat">🥺</div>
 
-<h1 id="question">Divya, will you be my wife? ❤️</h1>
+<h1 id="question">Divya, I'm really sorry... will you forgive me? ❤️</h1>
 
-<button id="yes">Yes ❤️</button>
+<button id="yes">I forgive you ❤️</button>
 <button id="no">No</button>
 
 </div>
-
-<audio id="music" loop>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-</audio>
 
 <script>
 
@@ -105,11 +99,11 @@ let question=document.getElementById("question");
 let size=1;
 
 let messages=[
-"Divya please? 🥺",
-"Think again Divya ❤️",
-"Don't break my heart 💔",
-"Are you really sure? 😭",
-"Last chance Divya 😳"
+"Divya please forgive me 🥺",
+"I really didn't mean to hurt you ❤️",
+"I promise I'll do better 💔",
+"Please don't stay mad 😭",
+"One last chance? 🥺"
 ];
 
 let index=0;
@@ -137,28 +131,26 @@ no.addEventListener("click",moveButton);
 
 yes.addEventListener("click",()=>{
 
-document.getElementById("music").play();
-
 document.body.innerHTML=`
 
 <h1 style="font-size:60px;color:#ff4b7d">
-Divya ❤️
+Thank you Divya ❤️
 </h1>
 
-<h2>You just made me the happiest person 🥰</h2>
+<h2>You just made me the happiest person 🥺</h2>
 
 <p style="font-size:24px">
-I love you so much ❤️ <br><br>
-Will you really be my wife? 💍
+I promise I'll be better.  
+Thank you for forgiving me ❤️
 </p>
 
 `;
 
-confetti();
+hearts();
 
 });
 
-function confetti(){
+function hearts(){
 
 setInterval(()=>{
 
