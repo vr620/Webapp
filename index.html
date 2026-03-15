@@ -3,7 +3,7 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>I'm Sorry Divya ❤️</title>
+<title>For Divya ❤️</title>
 
 <style>
 
@@ -24,15 +24,21 @@ background:white;
 padding:40px;
 border-radius:20px;
 box-shadow:0 15px 40px rgba(0,0,0,0.25);
+max-width:420px;
 }
 
 h1{
 color:#ff4b7d;
-font-size:30px;
+font-size:28px;
 }
 
-.cat{
-font-size:60px;
+p{
+font-size:18px;
+color:#444;
+}
+
+#cat{
+font-size:70px;
 animation:bounce 1.5s infinite;
 }
 
@@ -42,7 +48,7 @@ animation:bounce 1.5s infinite;
 }
 
 button{
-padding:14px 28px;
+padding:14px 26px;
 font-size:18px;
 border:none;
 border-radius:12px;
@@ -81,11 +87,21 @@ animation:float 5s linear infinite;
 
 <div class="container">
 
-<div class="cat">🥺</div>
+<div id="cat">🥺🐱</div>
 
-<h1 id="question">Divya, I'm really sorry... will you forgive me? ❤️</h1>
+<h1 id="question">Divya ❤️</h1>
 
-<button id="yes">I forgive you ❤️</button>
+<p>
+You know I love you so much.  
+Even when we have our tiny cute fights,  
+you are still my favorite person in the world.  
+
+I don't like when we stay upset with each other 🥺
+</p>
+
+<h1 id="ask">Will you forgive me?</h1>
+
+<button id="yes">Of course ❤️</button>
 <button id="no">No</button>
 
 </div>
@@ -94,16 +110,16 @@ animation:float 5s linear infinite;
 
 let yes=document.getElementById("yes");
 let no=document.getElementById("no");
-let question=document.getElementById("question");
+let ask=document.getElementById("ask");
 
 let size=1;
 
 let messages=[
-"Divya please forgive me 🥺",
-"I really didn't mean to hurt you ❤️",
-"I promise I'll do better 💔",
-"Please don't stay mad 😭",
-"One last chance? 🥺"
+"Please forgive me 🥺",
+"I promise I'll stop annoying you 😅",
+"You know I love you ❤️",
+"Don't stay mad at me 😭",
+"Okay okay you win 😂"
 ];
 
 let index=0;
@@ -120,7 +136,7 @@ size+=0.25;
 yes.style.transform="scale("+size+")";
 
 if(index < messages.length){
-question.innerText=messages[index];
+ask.innerText=messages[index];
 index++;
 }
 
@@ -133,16 +149,23 @@ yes.addEventListener("click",()=>{
 
 document.body.innerHTML=`
 
-<h1 style="font-size:60px;color:#ff4b7d">
-Thank you Divya ❤️
+<div style="text-align:center">
+
+<div style="font-size:80px">😺</div>
+
+<h1 style="color:#ff4b7d;font-size:50px">
+Yayyy ❤️
 </h1>
 
-<h2>You just made me the happiest person 🥺</h2>
+<h2>Thank you Divya 🥺</h2>
 
 <p style="font-size:24px">
-I promise I'll be better.  
-Thank you for forgiving me ❤️
+See… happy cat now 😺  
+I promise I'll try to annoy you less… maybe 😅  
+But I will always love you the most ❤️
 </p>
+
+</div>
 
 `;
 
